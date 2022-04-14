@@ -1,0 +1,149 @@
+.bottm {
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  background-color: aqua;
+  bottom: 0;
+  opacity: 0.95;
+  height: 80rpx;
+  align-items: center;
+  padding-top: auto;
+}
+.bottm .cartimg {
+  align-items: center;
+  padding-bottom: 0;
+  padding-left: 40rpx;
+  width: 70rpx;
+  height: 70rpx;
+}
+.bottm .bank {
+  padding-left: 30rpx;
+  color: black;
+  font-weight: 650;
+  padding-top: 7rpx;
+  font-size: 35rpx;
+}
+.bottm .toactive {
+  color: white;
+  margin-right: 30rpx;
+  width: 130rpx;
+  font-size: 30rpx;
+  margin-left: auto;
+  text-align: center;
+  line-height: 65rpx;
+  height: 65rpx;
+  border-radius: 50rpx;
+  background-color: grey;
+}
+.bottm .button {
+  color: white;
+  margin-right: 30rpx;
+  width: 130rpx;
+  font-size: 30rpx;
+  margin-left: auto;
+  text-align: center;
+  line-height: 65rpx;
+  height: 65rpx;
+  border-radius: 50rpx;
+  background-color: #00BFFF;
+}
+.Mcart {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background: #000;
+  z-index: 666;
+}
+.zhuTi {
+  position: fixed;
+  height: 40%;
+  width: 100%;
+  margin-bottom: 80rpx;
+  bottom: 0;
+  background-color: white;
+  left: 0;
+  z-index: 777;
+}
+.zhuTi .youhui {
+  background-color: #fffacd;
+  padding-left: 40rpx;
+}
+.zhuTi .second {
+  display: flex;
+}
+.zhuTi .second .clearto {
+  margin-left: auto;
+  margin-right: 20rpx;
+}
+.zhuTi .second .clearto image {
+  width: 30rpx;
+}
+.zhuTi .second .clearto .cleart {
+  font-size: 30rpx;
+  padding-left: 5rpx;
+  color: #B7B7B7;
+}
+.zhuTi scroll-view {
+  height: 80%;
+  flex-direction: column;
+}
+.zhuTi scroll-view .cblock {
+  height: 150rpx;
+  display: flex;
+  padding-left: 20rpx;
+}
+.zhuTi scroll-view .cblock .ciamg {
+  padding: 10rpx 0;
+}
+.zhuTi scroll-view .cblock .ciamg image {
+  width: 150rpx;
+  height: 100%;
+  border-radius: 10rpx;
+}
+.zhuTi scroll-view .cblock .cself {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20rpx;
+  justify-content: space-around;
+  width: 100%;
+}
+.zhuTi scroll-view .cblock .cself .cname {
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.zhuTi scroll-view .cblock .cself .cbI {
+  display: flex;
+  text-overflow: ellipsis;
+}
+.zhuTi scroll-view .cblock .cself .cbI .cBei {
+  font-size: 30rpx;
+  color: #B7B7B7;
+}
+.zhuTi scroll-view .cblock .cself .cbanBttom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.zhuTi scroll-view .cblock .cself .cbanBttom .price {
+  color: red;
+  font-weight: 650;
+  font-size: 28rpx;
+}
+.zhuTi scroll-view .cblock .cself .cbanBttom .cjisuan {
+  display: flex;
+  padding-right: 20rpx;
+  flex-direction: row-reverse;
+}
+.zhuTi scroll-view .cblock .cself .cbanBttom .cjisuan .caddimg image {
+  height: 45rpx;
+  width: 45rpx;
+}
+.zhuTi scroll-view .cblock .cself .cbanBttom .cjisuan .cnumber {
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  font-size: 28rpx;
+}

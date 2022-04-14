@@ -1,0 +1,7 @@
+ 
+<view id="{{item.order_status}}" class="weui-navbar__item {{activeIndex == item.order_status ? 'weui-bar__item_on' : ''}}" >
+        <view class = "weui-navbar__title">我的智能</view>
+        <view class = "weui-navbar__title">日志</view>
+</view>
+
+

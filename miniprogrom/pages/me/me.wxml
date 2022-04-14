@@ -1,0 +1,31 @@
+<view class="backI">
+  <image src="../../image/backn.png" mode="widthFix"></image>
+</view>
+<view class="demoT">
+  <view class="touX">
+    <image src="{{userimage}}" bindtap="dLuH"></image>
+    <view class="nameG" bindtap="dLuH">{{nickname}}</view>
+  </view>
+  <view class="demoI">
+    <view class="second" bindtap="goSw">
+      <image src="../../image/ddjh.png" mode="widthFix"></image>
+      <view class="tile">我的订单</view>
+      <view class="trilg"></view>
+    </view>
+    <view class="second" bindtap="goKefu">
+      <image src="../../image/kf.png" mode="widthFix"></image>
+      <button class="tile" hover-class="none" open-type="contact">联系客服</button>
+      <view class="trilg"></view>
+    </view>
+    <view class="second" bindtap="goFk" open-type="feedback">
+      <image src="../../image/fk.png" mode="widthFix"></image>
+      <button class="tile" open-type="feedback" hover-class="none">反馈建议</button>
+      <view class="trilg"></view>
+    </view>
+    <view class="second" bindtap="goX">
+      <image src="../../image/gy.png" mode="widthFix"></image>
+      <view class="tile">关于我们</view>
+      <view class="trilg"></view>
+    </view>
+  </view>
+</view>

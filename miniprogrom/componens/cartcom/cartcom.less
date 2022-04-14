@@ -1,0 +1,195 @@
+.bottm {
+    z-index: 999;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background-color:aqua;
+    bottom: 0;
+    opacity: 0.95;
+    height: 80rpx;
+    align-items: center;
+
+    padding-top: auto;
+
+    .cartimg {
+        align-items: center;
+        padding-bottom: 0;
+        padding-left: 40rpx;
+        width: 70rpx;
+        height: 70rpx;
+    }
+
+    .bank {
+        padding-left: 30rpx;
+        color: black;
+        font-weight: 650;
+        padding-top: 7rpx;
+        font-size: 35rpx;
+    }
+
+    .toactive {//支付native
+        color: white;
+        margin-right: 30rpx;
+        width: 130rpx;
+        font-size: 30rpx;
+        margin-left: auto;
+        text-align: center;
+        line-height: 65rpx;
+        height: 65rpx;
+        border-radius: 50rpx;
+        background-color: grey;
+    }
+
+    .button {
+        color: white;
+        margin-right: 30rpx;
+        width: 130rpx;
+        font-size: 30rpx;
+        margin-left: auto;
+        text-align: center;
+        line-height: 65rpx;
+        height: 65rpx;
+        border-radius: 50rpx;
+        background-color: #00BFFF;
+       
+    }
+}
+.Mcart {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background: #000;
+    z-index: 666;
+}
+
+.zhuTi {
+    position: fixed;
+    height: 40%;
+    width: 100%;
+    margin-bottom: 80rpx;
+    // bottom: -40%;
+    bottom: 0;
+    background-color: white;
+    left: 0;
+    z-index: 777;
+
+    .youhui {
+        background-color: #fffacd;
+        padding-left: 40rpx;
+    }
+
+    .second {
+        display: flex;
+        //  justify-content: space-between;
+
+        .baoz {}
+
+        .clearto {
+            margin-left: auto;
+            margin-right: 20rpx;
+
+            //   display: flex;
+            //   background-color: blue;
+            image {
+                width: 30rpx;
+            }
+
+            .cleart {
+                font-size: 30rpx;
+                padding-left: 5rpx;
+                color: #B7B7B7;
+            }
+        }
+    }
+
+    scroll-view {
+        //display: flex;
+        height: 80%;
+        flex-direction: column;
+
+        .cblock {
+
+            height: 150rpx;
+            display: flex;
+            //padding-top: 5rpx;
+            padding-left: 20rpx;
+
+            .ciamg {
+                padding: 10rpx 0;
+
+                image {
+                    width: 150rpx;
+                    height: 100%;
+                    border-radius: 10rpx;
+                    //   align-items: center;
+                }
+            }
+
+            .cself {
+                display: flex;
+                flex-direction: column;
+                padding-left: 20rpx;
+                justify-content: space-around;
+                width: 100%;
+
+                //background-color: yellow;
+                .cname {
+                    font-size: 30rpx;
+                    font-weight: 600;
+                }
+
+
+                .cbI {
+                    display: flex;
+               //     flex-direction: row;
+                 //   background-color: #33CCFF;
+                 text-overflow: ellipsis;
+                    // padding-left: 3rpx;
+                    .cBei {
+                        font-size: 30rpx;
+                        color: #B7B7B7;
+                //     overflow: hidden;
+                    //   
+                     //   white-space: nowrap;
+                    }
+                }
+
+
+
+                .cbanBttom {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    .price {
+                        color: red;
+                        font-weight: 650;
+                        font-size: 28rpx;
+                    }
+
+                    .cjisuan {
+                        display: flex;
+                        padding-right: 20rpx;
+                        flex-direction: row-reverse;
+
+                        .caddimg {
+                            image {
+                                height: 45rpx;
+                                width: 45rpx;
+                            }
+                        }
+
+                        .cnumber {
+                            padding-left: 10rpx;
+                            padding-right: 10rpx;
+                            font-size: 28rpx;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

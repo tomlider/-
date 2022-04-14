@@ -1,0 +1,75 @@
+<search aaa="{{inty}}" bindturn="getTurn" id="search"></search>
+<!--搜素历史-->
+<view class="hisBan">
+  <view class="top">
+    <view class="title">
+      历史搜索
+    </view>
+    <view class="gar" bindtap="delet">
+      <image src="../../image/garbege.png" mode="widthFix"></image>
+    </view>
+  </view>
+  <view class="item">
+    <view wx:for="{{history}}" wx:for-item="item2" wx:key="item2" class="for">
+      <view bindtap="fuZ" data-index="{{item2}}">{{item2}}</view>
+    </view>
+  </view>
+</view>
+<view class="Mcart" wx:if="{{mask}}" catchtap="turn" catchtouchmove> </view>
+<scroll-view class="right" scroll-y scroll-top="{{scroll}}" scroll-with-animation="true" scroll-into-view="top{{Tab}}"
+  bindscroll="forLeft">
+  <view wx:for="{{searchArr}}" wx:key="item3" wx:for-item="item3" wx:for-index="index3" class="block">
+    <view class="iamg" bindtap="godetails" data-index="{{item3._id}}">
+      <image src="{{item3.icon}}" mode="aspectFill"></image>
+    </view>
+    <view class="self" bindtap="godetails" data-index="{{item3._id}}">
+      <view class="name">{{item3.name}}</view>
+      <view class="tui">{{item3.tuijyu}}</view>
+      <view class="banBttom">
+        <view class="price">￥{{item3.price}}</view>
+        <view class="jisuan">
+          <view class="selt" catchtap="forxuan" wx:if="{{item3.menuguige}}" data-idx3="{{index3}}">选择</view>
+          <view class="addimg" wx:if="{{!item3.menuguige}}">
+            <image src="../../image/add.png" mode="widthFix" catchtap="addNumber" data-idx3="{{index3}}"
+              data-index2="{{index2}}" data-calcu="{{1}}">
+            </image>
+          </view>
+          <view class="number" wx:if="{{item3.jian}}">{{item3.foodNumber}}</view>
+          <view class="addimg">
+            <image wx:if="{{item3.jian}}" src="../../image/jian.png" data-calcu="{{-1}}" catchtap="addNumber"
+              data-idx3="{{index3}}" data-index2="{{index2}}"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="xuanM" wx:if="{{mXuan}}" catchtouchmove>
+    <icon type="cancel" class="cancel" color="grey" catchtap="turn"></icon>
+    <view class="xname">{{kexuan.name}}</view>
+    <view class="cjisuan">
+      <view class="shut">数量</view>
+      <view class="calu">
+        <view class="caddimg">
+          <image src="../../image/jian.png" mode="widthFix" catchtap="xaddNumber" data-calcu="{{-1}}">
+          </image>
+        </view>
+        <view class="cnumber">{{xNumber}}</view>
+        <view class="caddimg">
+          <image src="../../image/add.png" catchtap="xaddNumber" data-calcu="{{1}}"></image>
+        </view>
+      </view>
+    </view>
+    <view class="kwmk">
+      <view class="kt">口味选择</view>
+      <view class="kmodol">
+        <block wx:for="{{kexuan.menuguige}}" wx:key="item2" wx:for-item="item2" wx:for-index="index2">
+          <view class="{{index2===xcurrentIndex?'activ':' kbank'}}" catchtap="xuanItems" data-idu="{{index2}}">{{item2}}
+          </view>
+        </block>
+      </view>
+    </view>
+    <view catchtap="newtocart" class="addTocart">加入购物车</view>
+  </view>
+  <!--加载完毕view-->
+  <view class="jiaW">--- 加载完毕 ---</view>
+</scroll-view>

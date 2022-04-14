@@ -1,0 +1,42 @@
+<view class="bannerT" >
+  <view class="two">全部</view>
+  <view class="one">退款</view>
+</view>
+
+<view class="bacG" wx:if="{{orderFlag}}">
+  <view class="imag">
+    <image src="../../image/plm.png" mode="widthFix"></image>
+  </view>
+</view>
+
+<view class="ddI"  wx:if="{{!orderFlag}}" >
+  <view class="demo" wx:for="{{orderN}}" wx:for-item="item" wx:key="item" bindtap="goddDtail" data-idx="{{index}}"  wx:for-index="index">
+    <view class="bTop">
+      <view class="tLef">尚易餐饮</view>
+      <view class="tRig">等待支付，剩余15:08</view>
+    </view>
+    <view class="bSec">{{item.currentTime}}</view>
+    <view class="bThird">
+      <view class="bbC">
+        <view wx:for="{{item.foodArr}}" wx:for-item="item2" wx:key="item2" class="wxFor">
+          <view class="tFood">{{item2.foodname}}x{{item2.foodnum}}</view>
+        </view>
+      </view>
+      <view class="tTotal">￥{{item.total}}</view>
+    </view>
+
+    <view class="bBottom">
+      <view class="bZhangt">
+        <view class="imag">
+          <image src="../../image/tsl.png"></image>
+        </view>
+        <view class="zTt">{{item.zhuangtai}}订单</view>
+      </view>
+      <view class="bWei" wx:if="{{false}}">
+        <view class="quX">取消订单</view>
+        <view class="Zfdd">支付订单</view>
+      </view>
+      <view class="again" >再来一单</view>
+    </view>
+  </view>
+</view>

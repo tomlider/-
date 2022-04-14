@@ -1,0 +1,54 @@
+page {
+  background-color: #ececec;
+}
+.img {
+  width: 750rpx;
+  height: 680rpx;
+}
+.tentT {
+  padding: 10rpx auto;
+  text-align: center;
+}
+.addTocart {
+  position: absolute;
+  bottom: 50rpx;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 75%;
+  height: 65rpx;
+  border-radius: 30rpx;
+  background-color: #00BFFF;
+  color: white;
+  font-size: 35rpx;
+  line-height: 65rpx;
+  text-align: center;
+}
+.banner {
+  padding: 25rpx;
+  background-color: white;
+  margin: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15rpx;
+}
+.banner .leftB .adrs {
+  font-size: 30rpx;
+}
+.banner .leftB .aj {
+  color: grey;
+  font-size: 25rpx;
+}
+.banner .leftB .naB {
+  display: flex;
+  font-size: 25rpx;
+  color: grey;
+}
+.banner .leftB .naB .name {
+  margin-right: 10rpx;
+}
+.banner .rightI {
+  width: 50rpx;
+  height: 50rpx;
+}

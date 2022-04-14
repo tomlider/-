@@ -1,0 +1,2 @@
+<textarea cols="30" rows="10" placeholder="请输入您的需求" class="texta" auto-focus="true" bindinput="forde"></textarea>
+<view class="{{comF===0?'completN':'complet'}}" bindtap="complet">完成</view>

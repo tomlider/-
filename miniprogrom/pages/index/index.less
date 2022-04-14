@@ -1,0 +1,337 @@
+page {
+  width: 100%;
+}
+
+.swiper_container {
+  display: flex;
+justify-content: flex-start;
+align-items:flex-start;
+  height: 40rpx;
+  background-color:#E6F7FF;//#E6F7FF
+}
+.swiper_item {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight:400;
+  color:#00BFFF;
+}
+
+.black {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.5;
+  overflow: scroll;
+  z-index: 1;
+}
+
+.bag1 {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  image {
+    border: solid 1rpx;
+    height: 60%;
+    position: fixed;
+    z-index: 999;
+    top: 15%;
+  }
+
+  .icon1 {
+    position: fixed;
+    z-index: 999;
+    margin-top: 80vh;
+  }
+}
+
+.iop {
+  height: 40vh;
+  width: 750rpx;
+
+  .swip {
+    width: 100%;
+
+    .yui {
+      width: 100%;
+    }
+  }
+}
+
+scroll-view {
+  background-color: #f5f5f5; //
+  //background-color: teal;  #e9e7ef
+  height: 100%;
+
+  //display: flex;
+  //justify-content: center;
+  .banner {
+    padding-top: 80rpx;
+    padding-bottom: 80rpx;
+    display: flex;
+    width: 80%;
+    background-color: white;
+    height: 90%;
+    border-radius: 5%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20rpx auto;
+
+    .demo {
+      display: flex;
+      flex-direction: column;
+
+      image {
+        height: 100rpx;
+        background-color: white;
+      }
+
+      .text {
+        color: black;
+        font-size: 30rpx;
+        font-weight: 600;
+        text-align: center;
+        padding-top: 30rpx;
+      }
+    }
+
+    .zhu {
+      margin: auto 0;
+      width: 2rpx;
+      height: 100rpx;
+      background-color: black;
+      border: black 2rpx solid;
+    }
+  }
+
+  .advert {
+    width: 100%;
+    background: #f5f5f5;
+    position: relative;
+
+  }
+
+  .tab-right {
+    width: 100%;
+    height: 60rpx;
+    // background-color: #FF59B4;
+  }
+
+  .advert .content-item text {
+    width: 100%;
+    line-height: 60rpx;
+    font-size: 28rpx;
+    color: #00BFFF;
+    text-align: center;
+    padding-left: 20rpx;
+    box-sizing: border-box;
+  }
+
+  .bottom {
+    background-color: #f5f5f5; //这里
+    height: 100%;
+    width: 95%;
+    margin: 0 auto;
+
+    .tuijian {
+      //display: flex;
+
+      .ttext {
+
+        display: flex;
+        width: 100%;
+        padding: 20rpx 0;
+        height: 100%;
+        align-items: center;
+        background-color: white;
+
+        .tuijtex {
+          font-size: 35rpx;
+          font-weight: 700;
+        }
+
+        .quanb {
+          margin-left: auto;
+          font-size: 25rpx;
+          color: #3a1b1b;
+        }
+        .trilg{
+
+        }
+      }
+
+      .kuai {
+        display: flex;
+        height: 300rpx;
+        background-color: white;
+
+        //width: auto;
+        .block {
+          background-color: white;
+          margin: 15rpx 20rpx 20rpx 0;
+          border: 1rpx #f5f5f5 solid;
+          //   background-color: #707070;
+          display: flex;
+          flex-direction: column;
+          width: 300rpx;
+
+          .imad {
+            height: 300rpx;
+            width: 300rpx;
+          }
+
+          .tuitext {
+            display: flex;
+            padding: 15rpx 0;
+
+            .tuiname {
+              font-size: 30rpx;
+              font-weight: 700;
+              padding-left: 20rpx;
+            }
+
+            .tuiprice {
+              margin-left: auto;
+              font-size: 35rpx;
+              font-weight: 600;
+              color: #00BFFF; // 
+            }
+          }
+        }
+      }
+
+    }
+
+    .youh {
+      //#F9D23A
+      margin-top: 30rpx;
+      background-color: #f5f5f5;
+
+      .yhBan {
+        display: flex;
+        background-color: white; //hotpink
+        align-items: center;
+        margin-top: 15rpx;
+
+        .tou {
+          width: 13%;
+          //  background-color: rebeccapurple;
+          font-size: 40rpx;
+          color: #FF59B4; //#F9D23A
+          margin: 20rpx 20rpx 20rpx 40rpx;
+        }
+
+        .yhIt {
+          margin: 15rpx 20rpx;
+          //  background-color: salmon;
+          width: 50%;
+          border-right: #FF59B4 1rpx dotted;
+
+          .yhT {
+            font-size: 30rpx;
+          }
+
+          .yhzb {
+            font-size: 25rpx;
+            color: #B7B7B7;
+          }
+        }
+
+        .yhw {
+          margin: 10rpx 20rpx;
+          font-size: 30rpx;
+          color: #FF59B4;
+          // background-color: brown;
+        }
+      }
+
+      .yuBott {
+        margin: 5rpx auto;
+        color: white;
+        width: 60%;
+        font-size: 30rpx;
+        text-align: center;
+        line-height: 60rpx;
+        height: 60rpx;
+        border-radius: 30rpx 0rpx;
+        background-color: #FF59B4;
+        //border: #FF59B4 1rpx solid;
+      }
+    }
+
+    //
+    .sjn {
+      font-size: 40rpx;
+      font-weight: 650;
+      margin: 40rpx 0;
+    }
+
+    .sjt {
+      border-bottom: 1rpx #f5f5f5 solid;
+
+      .sjtime {
+        font-size: 30rpx;
+        margin: 30rpx 0;
+      }
+
+      .timeI {
+        color: #B7B7B7;
+        font-size: 30rpx;
+      }
+
+    }
+
+    .address {
+      .addt {
+        font-size: 30rpx;
+        margin: 30rpx 0;
+      }
+
+      .addb {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .addi {
+          font-size: 30rpx;
+
+        }
+
+
+      }
+    }
+
+    .tocall {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .callt {
+        font-size: 30rpx;
+        margin: 30rpx 0;
+      }
+    }
+
+  }
+}
+
+.img {
+  height: 35rpx;
+  width: 35rpx;
+  margin-right: 20rpx;
+
+  image {}
+}
+
+.backw {
+  background-color: white;
+}

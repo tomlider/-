@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "cartcom":"../../componens/cartcom/cartcom"
+  }
+
+}

@@ -1,0 +1,111 @@
+<view class="topTitle">订单已完成</view>
+<!--剩余支付时间-->
+<view class="callB" bindtap="toCall">
+  <image src="../../image/call.png" mode="widthFix"></image>
+  <view class="callTi">致电商家</view>
+</view>
+<view class="foodArr">
+  <view class="foodT">菜单详情</view>
+  <view class="arrBanner">
+    <view class="arrItem" wx:for="{{aRR.foodArr}}" wx:key="item" wx:for-item="item">
+      <view class="imag">
+        <image src="{{item.picurl}}" mode="aspectFill"></image>
+      </view>
+      <view class="three">
+        <view class="foodName">{{item.foodname}}</view>
+        <view class="beiZ">{{item.beizhu}}</view>
+        <view class="foodNum">x{{item.foodnum}}</view>
+      </view>
+      <view class="price">￥{{item.price}}</view>
+    </view>
+    <block wx:if="{{aRR.zhuangtai===b||aRR.zhuangtai===a}}">
+      <view class="bbF">
+        <view class="bbfT">
+          包装费：
+        </view>
+        <view class="bbNq">
+          ￥{{aRR.bzq}}
+        </view>
+      </view>
+      <view class="bbF" wx:if="{{aRR.zhuangtai===b}}">
+        <view class="bbfT">
+          配送费:
+        </view>
+        <view class="bbNq">
+          ￥5
+        </view>
+      </view>
+      <view class="bbF">
+        <view class="bbfT">
+          满减:
+        </view>
+        <view class="bbMM">
+          -￥{{aRR.mjq}}
+        </view>
+      </view>
+    </block>
+    <view class="foodTT">总计：{{aRR.total}}</view>
+  </view>
+</view>
+<!--以下暂不显示-->
+
+<view class="foodArr">
+  <view class="bbF">
+    <view class="bbfT">就餐方式：</view>
+    <view class="bbNq">{{aRR.zhuangtai}}</view>
+  </view>
+
+  <!--电话，状态，外卖地址，餐具，桌号，满减，备注，姓名，包装费，下单时间，配送费，订单 -->
+  <!--1-->
+  <view class="bbF" wx:if="{{aRR.zhuangtai!==b}}">
+    <view class="bbfT">
+      预留电话：
+    </view>
+    <view class="bbNq">
+      {{aRR.call}}
+    </view>
+  </view>
+  <view class="bbF">
+    <view class="bbfT">
+      餐具：
+    </view>
+    <view class="bbNq">
+      {{aRR.cj}}
+    </view>
+  </view>
+  <view class="bbF" wx:if="{{aRR.zhuangtai===c}}">
+    <view class="bbfT">
+      桌号：
+    </view>
+    <view class="bbNq">
+      {{aRR.zh}}
+    </view>
+  </view>
+  <!--1-->
+  <view class="bbF" wx:if="{{aRR.zhuangtai===a}}">
+    <view class="bbfT">
+      姓名：
+    </view>
+    <view class="bbNq">
+      {{aRR.nameI}}
+    </view>
+  </view>
+  <view class="bbF" wx:if="{{aRR.zhuangtai===b}}">
+    <view class="bbfT">外卖地址：</view>
+    <view class="bbNqe">
+      <view>{{aRR.addressStor.nameI}} {{aRR.addressStor.cj}}</view>
+      <view>{{aRR.addressStor.address}}</view>
+      <view>{{aRR.addressStor.aj}}</view>
+    </view>
+  </view>
+</view>
+<view class="foodArr">
+  <view class="bbFq">
+    <view class="bbfTq">订单号：</view>
+    <view class="bbNq"> {{aRR._createTime}}</view>
+  </view>
+  <view class="bbFq">
+    <view class="bbfTq">下单时间：</view>
+    <view class="bbNq">{{aRR.currentTime}}</view>
+  </view>
+</view>

@@ -1,0 +1,136 @@
+<view class="zy">
+  <!--必填项，不给过-->
+  <view class="bannerT">
+    <view class="title">
+      <view class="titleTe">大连尚易餐饮</view>
+      <view class="titleMap">沙河口区黄浦路202号</view>
+      <view class="titleMap" wx:if="{{paFalg===0}}">距离您{{kM}}米</view>
+    </view>
+    <view class="mapImage">
+      <image src="../../image/dingW.png" bindtap="goMap"></image>
+    </view>
+  </view>
+  <!--图片两个，目前用蓝色 -->
+  <view class="bannerR" wx:if="{{paFalg===1}}">
+    <view class="{{srca==='tsl'?'cxt':'Rxt'}}" bindtap="turnImag">
+      <image src="../../image/{{srca}}.png" mode="widthFix"></image>
+      <view class="btext">
+        门店堂食
+      </view>
+    </view><!-- src='../../images/skins/{{item.raceName}}.png'></image> 设想-->
+    <view class="{{srcb==='dbb'?'cxt':'Rxt'}}" bindtap="turnImage">
+      <image src="../../image/{{srcb}}.png" mode="widthFix"></image>
+      <view class="btext">
+        打包带走
+      </view>
+    </view>
+  </view>
+
+  <view class="falgadd" bindtap="toEdit" wx:if="{{paFalg===0}}">
+    <!--wx:if="{{paFalg===0}}"-->
+    <view class="falgC" wx:if="{{falgA}}">
+      <view class="falgA">暂无地址</view>
+      <view class="falgB">
+        请点击添加地址
+      </view>
+    </view>
+    <block wx:else>
+      <view class="leftB">
+        <view class="adrs">{{addressStor.address}}</view>
+        <view class="aj">{{addressStor.aj}}</view>
+        <view class="naB">
+          <view class="name">{{addressStor.nameI}}</view>
+          <view class="cj">{{ addressStor.cj}}</view>
+        </view>
+      </view>
+    </block>
+    <view class="trilg"></view>
+  </view>
+  <!--start-->
+
+  <!--start-->
+  <view class="bCustor">
+    <view class="jsname" wx:if="{{paFalg===1&&fSfalg===1}}">
+      <view class="jT">联系人</view>
+      <input type="text" class="bI" placeholder="您的姓名" bindinput="nameInp" />
+    </view>
+    <view class="jsCall" wx:if="{{paFalg===1}}">
+      <view class="jT">电话：</view>
+      <input type="number" class="bI" placeholder="预留电话" bindinput="callinput" confirm-type="nest" />
+    </view>
+
+    <view></view>
+    <view class="jsCall" wx:if="{{paFalg===1&&fSfalg===0}}">
+      <view class="jT">桌号：</view>
+      <input type="number" class="bI" placeholder="见桌号牌" placeholder-class="bIp" confirm-type="nest"
+        bindinput="zhinput" />
+    </view>
+    <view class="jsCall">
+      <view class="jT">餐具：</view>
+      <input type="number" class="bI" placeholder="/套" confirm-type="done" bindinput="cjinput" />
+    </view>
+  </view>
+  <view class="cartT">请核对您的订单</view>
+  <scroll-view class="right" scroll-y scroll-top="{{scroll}}" scroll-with-animation="true" scroll-into-view="top{{Tab}}"
+    bindscroll="forLeft">
+    <view wx:for="{{cartgoods}}" wx:key="item" wx:for-item="item" wx:for-index="index" class="block">
+      <view class="iamg" bindtap="godetails" data-index="{{item._id}}">
+        <image src="{{item.picurl}}" mode="aspectFill" mode="widthFix"></image>
+      </view>
+      <view class="self" bindtap="godetails" data-index="{{item._id}}">
+        <view class="nameb">
+          <view class="name"> {{item.foodname}}</view>
+          <view class="tP">￥{{item.foodnum*item.price}}</view>
+        </view>
+        <view class="cbI">
+          <block wx:for="{{item.beizhu}}" wx:key="item4" wx:for-item="item4">
+            <view class="cBei">{{item4}}</view>
+          </block>
+        </view>
+        <view class="banBttom">
+          <view class="price">×{{item.foodnum}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="youHui" wx:if="{{}}">
+      <view class="quter">券</view>
+      <view class="quanN">￥-5{{}}</view>
+    </view>
+    <view class="youHui">
+      <view class="quter">满</view>
+      <view class="qutT">满减优惠</view>
+      <view class="quanN">-￥{{mjq}}</view>
+    </view>
+    <view class="lingJ">
+      <view class="bbF" wx:if="{{fSfalg!==0||paFalg===0}}">
+        <view class="bbfT">
+          包装费
+        </view>
+        <view class="bbN">
+          ￥{{bzq}}
+        </view>
+      </view>
+      <view class="bbF" wx:if="{{paFalg===0}}">
+        <view class="bbfT">配送费</view>
+        <view class="bbN">￥5{{}}</view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="beiZ">
+    <view class="beizT">
+      备注
+    </view>
+    <view class="bB">
+      <view class="bBt" bindtap="goBei">请写下您的其他需求 </view>
+      <image src="../../image/trilg.png" mode="widthFix" bindtap="goBei"></image>
+    </view>
+  </view>
+</view>
+<view class="bottm" catchtap="falgRais" style="z-index:{{zindex}}">
+  <view class="bank">合计：￥{{total}}</view>
+  <view class="button" catchtap="pay">立即支付</view>
+</view>
+<view class="Mbz" wx:if="{{Mb}}">
+</view>
+<view class="Mbx" wx:if="{{Mb}}">
+</view>

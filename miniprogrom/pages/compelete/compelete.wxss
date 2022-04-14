@@ -1,0 +1,26 @@
+.topT {
+  margin-top: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.second {
+  text-align: center;
+  margin-bottom: 40rpx;
+}
+.third {
+  display: flex;
+  width: 600rpx;
+  justify-content: space-around;
+  margin: 80rpx auto 30rpx;
+}
+.third .left {
+  align-items: center;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 30rpx;
+  padding: 15rpx 70rpx;
+  border: #D7D7D7 solid 1rpx;
+  background-color: white;
+  border-radius: 5rpx;
+}

@@ -1,0 +1,67 @@
+page {
+  height: 100%;
+  background-color: #ececec;
+  width: 100%;
+}
+.backI {
+  padding: 0 auto;
+  width: 750rpx;
+  height: 483rpx;
+}
+.demoT .touX {
+  width: 90%;
+  position: absolute;
+  display: flex;
+  background-color: white;
+  height: 170rpx;
+  border-radius: 15rpx;
+  top: 350rpx;
+  left: 2.5%;
+  align-items: center;
+  padding-left: 35rpx;
+}
+.demoT .touX image {
+  border-radius: 100%;
+  width: 120rpx;
+  height: 120rpx;
+}
+.demoT .touX .nameG {
+  margin-left: 40rpx;
+  font-size: 40rpx;
+}
+.demoT .demoI {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15rpx;
+  width: 85%;
+  margin: 70rpx auto;
+  background-color: white;
+  padding: 40rpx;
+}
+.demoT .demoI .second {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  height: 60rpx;
+  align-items: center;
+  margin: 20rpx 15rpx;
+}
+.demoT .demoI .second image {
+  width: 50rpx;
+}
+.demoT .demoI .second .tile {
+  margin-left: 30rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  text-align: left;
+  padding: 0;
+  position: static;
+  width: 100%;
+}
+button {
+  margin: 0;
+  padding: 0;
+  background-color: inherit;
+  position: static;
+}

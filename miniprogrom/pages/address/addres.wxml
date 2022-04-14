@@ -1,0 +1,21 @@
+<block wx:if="{{adfalg}}">
+  <view wx:for="{{addressStor}}" wx:key="item" wx:for-item="item" class="banner" wx:for-index="index" >
+    <view class="leftB" bindtap="yuB"  data-idx="{{index}}">
+      <view class="adrs">{{item.address}}</view>
+      <view class="aj">{{item.aj}}</view>
+      <view class="naB">
+        <view class="name">{{item.nameI}}</view>
+        <view class="cj">{{item.cj}}</view>
+      </view>
+    </view>
+   <view class="rightI"catchtap="bianJi" data-idx="{{index}}"><image src="../../image/bb.png"></image></view> 
+  </view>
+
+</block>
+<view wx:else>
+  <view class="img">
+    <image src="../../image/yit.png" mode="widthFix"></image>
+  </view>
+  <view class="tentT">暂无相关内容</view>
+</view>
+<view class="addTocart" bindtap="toaD">添加地址</view>

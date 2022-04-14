@@ -1,0 +1,21 @@
+image{
+  height:100%;
+  width: 100%;
+}
+.trilg{
+  padding: 8rpx;
+  border: black  solid ;
+  border-width:0 1rpx 1rpx 0;
+  transform: rotate(-45deg); 
+  -webkit-transform: rotate(-45deg); 
+  margin-right: 15rpx;
+}
+/*
+.trilg{
+  padding: 8rpx;
+  border: black  solid ;
+  border-width:0 1rpx 1rpx 0;
+  transform: rotate(-45deg); 
+  -webkit-transform: rotate(-45deg); 
+}
+*/

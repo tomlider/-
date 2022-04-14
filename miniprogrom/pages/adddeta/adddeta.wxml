@@ -1,0 +1,28 @@
+<view class="banner">
+  <view class="jsname">
+    <view class="jT">联系人：</view>
+    <input type="text" class="bI" placeholder="您的姓名" bindinput="nameInp" value="{{vN}}" />
+  </view>
+  <view class="jsname">
+    <view class="jT">手机号：</view>
+    <input type="number" class="bI" placeholder="请输入手机号" bindinput="callinput" value="{{vC}}" />
+  </view>
+  <view class="jsname" bindtap="addinput">
+    <view class="jT">收货地址：</view>
+    <view class="bIe">
+      <view wx:if="{{falgQ}}">{{qiTai}}</view>
+      <view wx:else>请选择地址
+      </view>
+      <view class="trilg"></view>
+    </view>
+
+  </view>
+  <view class="jsname">
+    <view class="jT">详细地址：</view>
+    <input type="text" class="bI" placeholder="如：某小区5号楼302室" bindinput="addDetInp" value="{{vA}}" />
+  </view>
+</view>
+<view class="imgg" wx:if="{{falgQ}}" bindtap="delete">
+  <image src="../../image/garbege.png" mode="widthFix"></image>
+</view>
+<view class="addTocart" bindtap="toaD">保存</view>

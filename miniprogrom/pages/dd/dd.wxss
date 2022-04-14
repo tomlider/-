@@ -1,0 +1,115 @@
+page {
+  background-color: #F7F7F7;
+}
+.bacG {
+  background-color: #F7F7F7;
+  width: 100vw;
+  height: 100vh;
+}
+.bannerT {
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  display: flex;
+  height: 80rpx;
+  top: 0;
+}
+.bannerT .one {
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 35rpx;
+  flex: 1;
+  padding: auto;
+}
+.bannerT .two {
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 35rpx;
+  flex: 1;
+  padding: auto;
+  border-bottom: 9rpx solid #00bfff;
+}
+.ddI {
+  margin-top: 110rpx;
+  background-color: #F7F7F7;
+}
+.ddI .demo {
+  width: 90%;
+  background-color: white;
+  border-radius: 15rpx;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 30rpx;
+  height: 200rpx;
+  padding: 20rpx;
+}
+.ddI .demo .bTop {
+  display: flex;
+  align-items: center;
+  flex: 3;
+  font-size: 30rpx;
+}
+.ddI .demo .bTop .tRig {
+  color: #00bfff;
+  margin-left: auto;
+}
+.ddI .demo .bSec {
+  flex: 2;
+  font-size: 20rpx;
+  align-items: center;
+}
+.ddI .demo .bThird {
+  height: 37rpx;
+  flex: 4;
+  display: flex;
+  justify-content: space-between;
+  font-size: 25rpx;
+  line-height: 37rpx;
+  align-items: center;
+}
+.ddI .demo .bThird .bbC {
+  margin-right: 20rpx;
+  display: -webkit-flex;
+  overflow: scroll;
+  text-overflow: ellipsis;
+}
+.ddI .demo .bThird .bbC .wxFor {
+  flex-shrink: 0;
+}
+.ddI .demo .bThird .bbC .wxFor .tFood {
+  height: 37rpx;
+  padding-right: 15rpx;
+}
+.ddI .demo .bThird .tTotal {
+  font-weight: 600;
+}
+.ddI .demo .bBottom {
+  flex: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ddI .demo .bBottom .bZhangt {
+  width: 200rpx;
+  font-size: 30rpx;
+  display: flex;
+}
+.ddI .demo .bBottom .bZhangt .imag {
+  width: 40rpx;
+}
+.ddI .demo .bBottom .bZhangt .zTt {
+  margin-left: 10rpx;
+}
+.ddI .demo .bBottom .bWei {
+  display: flex;
+  font-size: 25rpx;
+}
+.ddI .demo .bBottom .again {
+  font-size: 25rpx;
+  color: white;
+  background-color: #00bfff;
+  padding: 10rpx 20rpx;
+  border-radius: 5rpx;
+}

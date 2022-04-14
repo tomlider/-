@@ -1,0 +1,37 @@
+<view class="details">
+  <image src="{{details.icon}}" class="bigimage" mode="widthFix"></image>
+  <view class="item">
+    <view class="textbar">
+      <view class="name">{{details.name}}</view>
+      <view class="price"> ￥{{details.price}}</view>
+      <view class="forcart">
+        <view class="jisuan">
+          <view class="addimg">
+            <image src="../../image/add.png" mode="widthFix" catchtap="xaddNumber" data-calcu="{{1}}">
+            </image>
+          </view>
+          <view class="number">{{num}}</view>
+          <view class="addimg">
+            <image src="../../image/jian.png" data-calcu="{{-1}}" catchtap="xaddNumber"></image>
+          </view>
+        </view>
+      </view>
+      <view class="sugge">
+        <view class="suggeText">菜品简介：</view>
+        <view class="suggItem">{{details.tuijyu}}</view>
+      </view>
+      <view wx:if="{{details.menuguige}}" class="kouW">可选口味：</view>
+      <view class="dBank">
+        <view wx:if="{{details.menuguige}}" wx:for="{{details.menuguige}}" wx:for-item="item" wx:key="item"
+          class="{{index===xcurrentIndex?'activ':' kouX'}}" data-idx="{{index}}" catchtap="xuanItems">
+          {{item}}</view>
+        <view wx:if="{{details.jianJie}}">{{details.jianJie}}</view>
+      </view>
+      <view catchtap="newtocart" class="addTocart" wx:if="{{flagcart}}">加入购物车</view>
+    </view>
+ 
+    <!-- <image></image> -->
+  </view>
+</view>
+  <!--  <cartcom id="cart"></cartcom> -->
+ 

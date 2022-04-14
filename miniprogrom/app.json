@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/details/details",
+    "pages/dd/dd",
+    "pages/me/me",
+    "pages/dingdan/dingdan",
+    "pages/mune/mune",
+    "pages/searchP/searchP",
+    "pages/jieSuan/jiSuan",
+    "pages/beiyong/index",
+    "pages/mapn/mapn",
+    "pages/beiz/beiz",
+    "pages/address/addres",
+    "pages/adddeta/adddeta",
+    "pages/beiyong2/beiyong2",
+    "pages/ddDetail/ddDetail",
+    "pages/compelete/compelete"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00BFFF"
+  },
+  "tabBar": {
+    "selectedColor": "#000000",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "/image/home1.png",
+        "iconPath": "image/home.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "/image/dd1.png",
+        "iconPath": "image/dd.png",
+        "pagePath": "pages/dd/dd",
+        "text": "订单"
+      },
+      {
+        "selectedIconPath": "/image/p1.png",
+        "iconPath": "image/p.png",
+        "pagePath": "pages/me/me",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "请允许获取您的位置信息用于外卖服务"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "networkTimeout": {
+    "request": 10000
+  }
+}

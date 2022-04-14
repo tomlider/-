@@ -1,0 +1,349 @@
+page {
+  background-color: #ececec;
+}
+.zy {
+  display: flex;
+  flex-direction: column;
+  background-color: #ececec;
+  padding: 0 25rpx 80rpx;
+  height: 100%;
+}
+.zy .bannerT {
+  display: flex;
+  margin: 25rpx 0;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+.zy .bannerT .title {
+  display: flex;
+  flex-direction: column;
+}
+.zy .bannerT .title .titleTe {
+  font-size: 33rpx;
+  font-weight: bolder;
+}
+.zy .bannerT .title .titleMap {
+  font-size: 30rpx;
+  color: #707070;
+}
+.zy .bannerT .mapImage {
+  width: 55rpx;
+  height: 55rpx;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10rpx;
+}
+.zy .bannerT .mapImage image {
+  width: 55rpx;
+  height: 55rpx;
+}
+.zy .bannerR {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  padding: 10rpx 0;
+}
+.zy .bannerR .Rxt {
+  display: flex;
+  padding: 10rpx 15rpx;
+  border-radius: 30rpx 7rpx;
+  border: #707070 1rpx solid;
+}
+.zy .bannerR .Rxt image {
+  height: 50rpx;
+}
+.zy .bannerR .Rxt .btext {
+  color: black;
+  font-size: 30rpx;
+}
+.zy .bannerR .Rxt .ctext {
+  padding: 10rpx 15rpx;
+  color: white;
+  background-color: #00BFFF;
+  border-radius: 30rpx 7rpx;
+  font-size: 30rpx;
+}
+.zy .bannerR .cxt {
+  display: flex;
+  padding: 10rpx 15rpx;
+  border: #00BFFF 1rpx solid;
+  border-radius: 30rpx 7rpx;
+}
+.zy .bannerR .cxt image {
+  height: 50rpx;
+}
+.zy .bannerR .cxt .btext {
+  color: #00BFFF;
+  font-size: 30rpx;
+}
+.zy .falgadd {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx #ececec solid;
+  background-color: white;
+  padding: 30rpx 0;
+  align-items: center;
+}
+.zy .falgadd image {
+  width: 40rpx;
+}
+.zy .falgadd .falgC {
+  padding-left: 15rpx;
+}
+.zy .falgadd .falgC .falgA {
+  font-weight: bolder;
+  font-size: 30rpx;
+}
+.zy .falgadd .falgC .falgB {
+  padding-top: 10rpx;
+  font-size: 25rpx;
+  color: #707070;
+}
+.zy .bCustor {
+  background-color: white;
+  margin-top: 20rpx;
+  padding: 0 10rpx;
+}
+.zy .bCustor .bJs {
+  font-size: 25rpx;
+  color: #707070;
+}
+.zy .bCustor .jsname {
+  display: flex;
+}
+.zy .bCustor .jsCall {
+  display: flex;
+  border-bottom: 1rpx #ececec solid;
+  align-items: center;
+  font-size: 30rpx;
+}
+.zy .bCustor .jsCall .callI {
+  border-bottom: solid grey rpx;
+  flex: 5;
+}
+.zy .bCustor .zNumber {
+  display: flex;
+}
+.zy .bCustor .canJub {
+  display: flex;
+}
+.zy .beiZ {
+  margin: 20rpx 0;
+  display: flex;
+  background-color: white;
+  border-radius: 15rpx;
+  width: 100%;
+  padding: 20rpx 0;
+  height: 40rpx;
+  align-items: center;
+}
+.zy .beiZ .beizT {
+  font-size: 30rpx;
+}
+.zy .beiZ .bB {
+  display: flex;
+  margin-left: auto;
+  font-size: 25rpx;
+  color: #707070;
+}
+.zy .beiZ .bB .bBt {
+  margin-right: 5rpx;
+}
+.zy .beiZ .bB image {
+  width: 30rpx;
+}
+.zy .cartT {
+  font-size: 25rpx;
+  color: #707070;
+}
+.zy .right {
+  background-color: white;
+  height: 100%;
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20rpx;
+}
+.zy .right .block {
+  padding: 15rpx 0;
+  display: flex;
+  border-bottom: solid #ececec 1rpx;
+}
+.zy .right .block .iamg image {
+  border-radius: 15rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+.zy .right .block .self {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20rpx;
+  justify-content: space-around;
+  width: 100%;
+}
+.zy .right .block .self .nameb {
+  display: flex;
+  justify-content: space-between;
+}
+.zy .right .block .self .nameb .name {
+  font-size: 28rpx;
+}
+.zy .right .block .self .nameb .tP {
+  font-weight: 650;
+  font-size: 28rpx;
+  padding-right: 10rpx;
+}
+.zy .right .block .self .cbI {
+  display: flex;
+  text-overflow: ellipsis;
+}
+.zy .right .block .self .cbI .cBei {
+  font-size: 20rpx;
+  color: #B7B7B7;
+  margin-right: 10rpx;
+}
+.zy .right .block .self .banBttom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.zy .right .block .self .banBttom .price {
+  font-size: 25rpx;
+}
+.zy .right .lingJ .bbF {
+  display: flex;
+  align-items: center;
+}
+.zy .right .lingJ .bbF .bbfT {
+  font-weight: 600;
+  font-size: 30rpx;
+}
+.zy .right .lingJ .bbF .whq {
+  height: 35rpx;
+  width: 35rpx;
+}
+.zy .right .lingJ .bbF .bbN {
+  margin-left: auto;
+  font-size: 28rpx;
+  padding-right: 10rpx;
+}
+.zy .youHui {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+}
+.zy .youHui .quter {
+  font-size: 30rpx;
+  background-color: #d4237a;
+  padding: 8rpx;
+  color: white;
+  border: 2rpx solid;
+  border-radius: 20%;
+  line-height: 40rpx;
+  height: 40rpx;
+}
+.zy .youHui .qutT {
+  margin-left: 10rpx;
+  font-size: 30rpx;
+  margin-right: auto;
+}
+.zy .youHui .quanN {
+  color: red;
+  font-size: 28rpx;
+  padding-right: 10rpx;
+}
+.jT {
+  font-weight: bolder;
+  flex: 1;
+  font-size: 30rpx;
+  padding: 30rpx 5rpx;
+}
+.bottm {
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  background-color: #363636;
+  bottom: 0;
+  opacity: 0.95;
+  height: 80rpx;
+  align-items: center;
+  padding-top: auto;
+}
+.bottm .bank {
+  padding-left: 30rpx;
+  color: white;
+  font-weight: 650;
+  padding-top: 7rpx;
+  font-size: 35rpx;
+}
+.bottm .button {
+  color: white;
+  margin-right: 30rpx;
+  width: 150rpx;
+  font-size: 30rpx;
+  margin-left: auto;
+  text-align: center;
+  line-height: 60rpx;
+  height: 60rpx;
+  border-radius: 50rpx;
+  background-color: #00BFFF;
+}
+.bI {
+  border-bottom: solid #ececec 1rpx;
+  flex: 5;
+  font-size: 30rpx;
+  padding: 30rpx 0;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+.bIp {
+  font-size: 25rpx;
+}
+.Mbz {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background: #000;
+  z-index: 666;
+}
+.Mbx {
+  opacity: 0.95;
+  background-color: white;
+  position: fixed;
+  width: 80%;
+  height: 60%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 120rpx;
+  bottom: 0;
+  z-index: 999;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50rpx;
+}
+.leftB .adrs {
+  font-size: 30rpx;
+  padding-bottom: 5rpx;
+}
+.leftB .aj {
+  color: grey;
+  font-size: 25rpx;
+  padding-bottom: 5rpx;
+}
+.leftB .naB {
+  display: flex;
+  font-size: 25rpx;
+  color: grey;
+}
+.leftB .naB .name {
+  margin-right: 5rpx;
+}

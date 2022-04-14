@@ -1,0 +1,32 @@
+.texta {
+  width: 90vw;
+  height: 400rpx;
+  background-color: #ececec;
+  margin: 20rpx auto;
+  border-radius: 15rpx;
+}
+
+.complet {
+  margin: 50rpx auto;
+  margin-bottom: 50rpx;
+  width: 75%;
+  height: 65rpx;
+  border-radius: 30rpx;
+  background-color: #00BFFF;
+  color: white;
+  font-size: 35rpx;
+  line-height: 65rpx;
+  text-align: center;
+}
+.completN {
+  margin: 50rpx auto;
+  margin-bottom: 50rpx;
+  width: 75%;
+  height: 65rpx;
+  border-radius: 30rpx;
+  background-color: #70d5f7;
+  color: #ececec;
+  font-size: 35rpx;
+  line-height: 65rpx;
+  text-align: center;
+}

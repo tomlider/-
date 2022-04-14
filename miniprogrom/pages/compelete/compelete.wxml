@@ -1,0 +1,8 @@
+<view class="topT">
+  <icon type="success" size="250rpx" color="#29CC00" class="icon"></icon>
+</view>
+<view class="second">支付成功</view>
+<view class="third">
+  <view class="left" bindtap="goOrderD">查看订单</view>
+  <view class="left" bindtap="goIndex">返回首页</view>
+</view>

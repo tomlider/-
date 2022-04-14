@@ -1,0 +1,5 @@
+<view class="boxfather">
+  <icon type="search"></icon>
+ <input type="text" placeholder="请输入关键字" bindinput="forRes" value="{{aaa}}" confirm-type='search'/>
+ <view class="sous" bindtap="forSearch">搜索</view>
+</view>

@@ -1,0 +1,50 @@
+<view class="bottm" bindtap="falgRais" style="z-index:{{zindex}}">
+    <view class="cartimg">
+      <image src="../../image/cartqw.png" mode="widthFix"></image>
+    </view>
+    <view class="bank">￥{{total}}</view>
+    <view class="{{total===0?'toactive':'button'}}" catchtap="jieSuan">结算</view>
+  </view>
+<view class="Mcart" wx:if="{{mask}}" catchtap="clear" catchtouchmove> </view>
+  <view class="zhuTi" wx:if="{{bmask}}" catchtouchmove animation="{{animationData}}" ><!-- -->
+    <view class="youhui">满{{}}减{{}}，还差￥{{}} </view>
+    <view class="second">
+      <view wx:if="{{waimai}}" class="baoz">包装费￥{{}} </view>
+      <view class="clearto" bindtap="clearcart">
+        <image src="../../image/garbege.png" mode="widthFix"></image>
+        <text class="cleart">清空</text>
+      </view>
+
+    </view>
+    <scroll-view enable-flex="true" scroll-y>
+      <view wx:for="{{cartgoods}}" wx:key="item" wx:for-item="item" wx:for-index="index" class="cblock">
+        <view class="ciamg">
+          <image src="{{item.picurl}}" mode="scaleToFill"></image>
+        </view>
+        <view class="cself">     
+          <view class="cname">{{item.foodname}}</view>
+          <view class="cbI">
+          <block  wx:for="{{item.beizhu}}" wx:key="item4" wx:for-item="item4">
+        <view class="cBei">{{item4}}</view>  
+         </block >
+        </view>
+          <view class="cbanBttom">
+            <view class="price">￥{{item.price}}</view>
+            <view class="cjisuan">
+              <view class="caddimg">
+                <image src="../../image/add.png" mode="widthFix" bindtap="caddNumber" data-idx3="{{index}}"
+                  data-index="{{index}}" data-calcu="{{1}}">
+                </image>
+              </view>
+              <view class="cnumber">{{item.foodnum}}</view>
+              <view class="caddimg">
+                <image src="../../image/jian.png" bindtap="caddNumber" data-idx3="{{index}}" data-index="{{index}}"
+                  data-calcu="{{-1}}"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+

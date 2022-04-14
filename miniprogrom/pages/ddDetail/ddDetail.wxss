@@ -1,0 +1,117 @@
+page {
+  background-color: #ececec;
+  width: 100%;
+}
+.topTitle {
+  position: absolute;
+  left: 30rpx;
+  top: 30rpx;
+  font-weight: bolder;
+}
+.callB {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  height: 80rpx;
+  line-height: 60rpx;
+  background-color: white;
+  align-items: center;
+  margin: 100rpx auto 0;
+}
+.callB image {
+  width: 40rpx;
+  margin-right: 20rpx;
+}
+.callB .callTi {
+  font-size: 35rpx;
+}
+.foodArr {
+  width: 85%;
+  margin: 30rpx auto;
+  padding: 20rpx 25rpx;
+  background-color: white;
+}
+.foodArr .foodT {
+  font-size: 30rpx;
+  font-weight: bolder;
+}
+.foodArr .foodTT {
+  font-size: 30rpx;
+  font-weight: bolder;
+  text-align: right;
+}
+.foodArr .arrBanner {
+  margin-bottom: 20rpx;
+}
+.foodArr .arrBanner .arrItem {
+  padding: 15rpx 0;
+  display: flex;
+  border-bottom: solid #ececec 1rpx;
+}
+.foodArr .arrBanner .arrItem .imag {
+  border-radius: 15rpx;
+  width: 100rpx;
+  height: 70rpx;
+}
+.foodArr .arrBanner .arrItem .three {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20rpx;
+  justify-content: space-around;
+  width: 100%;
+}
+.foodArr .arrBanner .arrItem .three .foodName {
+  font-size: 25rpx;
+}
+.foodArr .arrBanner .arrItem .three .beiZ {
+  font-size: 20rpx;
+}
+.foodArr .arrBanner .arrItem .three .foodNum {
+  font-size: 25rpx;
+}
+.foodArr .arrBanner .arrItem .price {
+  font-size: 30rpx;
+  font-weight: bolder;
+}
+.foodArr .bbF {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+.foodArr .bbF .bbfT {
+  font-size: 30rpx;
+}
+.foodArr .bbF .bbfTe {
+  font-size: 30rpx;
+}
+.foodArr .bbF .bbN {
+  margin-left: auto;
+  font-size: 30rpx;
+  font-weight: bolder;
+}
+.foodArr .bbF .bbNq {
+  margin-left: auto;
+  font-size: 30rpx;
+}
+.foodArr .bbF .bbNqe {
+  margin-left: auto;
+  font-size: 25rpx;
+  text-align-last: justify;
+}
+.foodArr .bbF .bbMM {
+  margin-left: auto;
+  font-size: 30rpx;
+  color: red;
+}
+.bbFq {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+.bbFq .bbfTq {
+  font-size: 30rpx;
+}
+.bbFq .bbNq {
+  margin-left: auto;
+  font-size: 30rpx;
+}

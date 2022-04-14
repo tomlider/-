@@ -1,0 +1,114 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/details/details",
+          "pathName": "pages/details/details",
+          "query": "res=79550af26029b10d04dbf29f7db04607",
+          "scene": null
+        },
+        {
+          "name": "pages/mune/mune",
+          "pathName": "pages/mune/mune",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/details/details",
+          "pathName": "pages/details/details",
+          "query": "res=28ee4e3e6023757804385d0b1e9aed15",
+          "scene": null
+        },
+        {
+          "name": "pages/searchP/searchP",
+          "pathName": "pages/searchP/searchP",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/searchP/searchP",
+          "pathName": "pages/searchP/searchP",
+          "query": "res=%E9%B8%A1",
+          "scene": null
+        },
+        {
+          "name": "结算页",
+          "pathName": "pages/jieSuan/jiSuan",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "地图页",
+          "pathName": "pages/mapn/mapn",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "备注页",
+          "pathName": "pages/beiz/beiz",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "备用页",
+          "pathName": "pages/beiyong/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "地址页",
+          "pathName": "pages/address/addres",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "地址添加页",
+          "pathName": "pages/adddeta/adddeta",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "备用页2",
+          "pathName": "pages/beiyong2/beiyong2",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我的页面",
+          "pathName": "pages/me/me",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "订单页面",
+          "pathName": "pages/dd/dd",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "订单详情页",
+          "pathName": "pages/ddDetail/ddDetail",
+          "query": "idx=1",
+          "scene": null
+        },
+        {
+          "name": "支付成功页",
+          "pathName": "pages/compelete/compelete",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.weui-bar__item_on::after {
+  position: absolute; 
+  width: 100rpx;   
+  height: 4rpx;
+  left: 37%;        
+  bottom: 0; 
+  background-color: #00C09C;   
+}
